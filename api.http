@@ -6,8 +6,32 @@ POST http://localhost:3000/products
 Content-Type: application/json
 
 {
-        "name": "Memórias do subsolo",
+        "name": "Os irmãos Karamazov",
         "description": "Literatura russa",
         "image_url": "https://via.placeholder.com/150",
-        "price": 100
+        "price": 115
+}
+
+
+###
+GET http://localhost:3000/orders
+
+
+###
+POST http://localhost:3000/orders
+Content-Type: application/json
+
+{
+    "items": [
+        {
+            "product_id": "09a10028-471a-49e5-98e7-8de7a9e279aa",
+            "quantity": 1
+        },
+        {
+            "product_id": "f15a402f-874c-414e-a467-79f06e3e57d1",
+            "quantity": 5
+        }
+    ],
+    "card_hash": "1a2s3d4f"
+
 }
