@@ -10,7 +10,7 @@ import { AuthGuard } from './auth.guard';
         JwtModule.register({
             global: true,
             secret: 'Shut Up Meg!',
-            signOptions: { expiresIn: '60s' },
+            signOptions: { expiresIn: '1000s' },
         }),
     ],
     controllers: [AuthController],
