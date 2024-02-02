@@ -15,12 +15,12 @@ Content-Type: application/json
 
 ###
 GET http://localhost:3000/orders
-
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsInVzZXJuYW1lIjoiU3Rld2llIiwiaWF0IjoxNzA2OTA5NTg3LCJleHAiOjE3MDY5MDk2NDd9.ZKrKpd2Mz9O6bNUbAdhPvUzbLlTN89leKPIk54aw6lU
 
 ###
 POST http://localhost:3000/orders
 Content-Type: application/json
-
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsInVzZXJuYW1lIjoiU3Rld2llIiwiaWF0IjoxNzA2OTEwNDc2LCJleHAiOjE3MDY5MTA1MzZ9.ipHgWUZuCiFW7ffM-YsW2cAJRLESD1APSPtpor0xwkI
 {
     "items": [
         {
@@ -34,4 +34,12 @@ Content-Type: application/json
     ],
     "card_hash": "1a2s3d4f"
 
+}
+
+###
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+{
+    "username": "abcd",
+    "password": "password"
 }
